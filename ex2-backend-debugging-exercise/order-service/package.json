@@ -1,0 +1,19 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "fastify": "^4.28.1",
+    "prisma": "^5.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  }
+}

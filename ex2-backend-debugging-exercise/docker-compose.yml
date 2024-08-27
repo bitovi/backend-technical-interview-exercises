@@ -1,0 +1,65 @@
+
+x-common-service-settings:
+  &common-service-settings
+  networks:
+    - etlnetwork
+
+networks:
+  etlnetwork:
+    name: etl_network
+
+services:
+  db:
+    <<: *common-service-settings
+    container_name: debugging-example_db
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+       - POSTGRES_PASSWORD=dbpassword
+       - POSTGRES_USER=dbuser
+       - POSTGRES_DB=postgres
+    volumes:
+      - ./db-scripts:/docker-entrypoint-initdb.d
+
+
+  order-service:
+    <<: *common-service-settings
+    container_name: debugging-example_order-service
+    image: node:20
+    depends_on:
+      - db
+    volumes:
+      - ./order-service:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://dbuser:dbpassword@db:5432/postgres
+    ports:
+      - 3000:3000
+    command: >
+      sh -c '\
+        cd /usr/src/app && \
+        npm ci && \
+        npm run dev
+      '
+
+  customer-service:
+    <<: *common-service-settings
+    container_name: debugging-example_customer-service
+    image: python:3.11-slim
+    depends_on:
+      - db
+    volumes:
+      - ./customer-service:/app
+    environment:
+      - DATABASE_URL=postgresql://dbuser:dbpassword@db:5432/postgres
+    ports:
+      - 3001:3001
+    command: >
+      sh -c '\
+        cd /app && \
+        apt-get update && apt-get install -y gcc libpq-dev && \
+        pip install --no-cache-dir -r requirements.txt && \
+        python server.py
+      '
