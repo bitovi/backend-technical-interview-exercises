@@ -26,7 +26,8 @@ the server will automatically reload after changes have been performed.
 
 Make a test request against the server with a command like this:
 ```
-curl 'localhost:3002/sales'
+# note the port may vary between the different languages 
+curl 'localhost:3002/sales_person'
 ```
 
 ## Interviewer setup instructions
