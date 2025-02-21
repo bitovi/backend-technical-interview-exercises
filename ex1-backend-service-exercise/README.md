@@ -15,8 +15,7 @@ parameter.
 More details are provided in comments in the source files:
 - Node, see `./node/index.js`
 
-[//]: # (TODO: add java)
-- Java, see `./java/`
+- Java, see `./java/src/main/java/com/bitovi/service_exercise/SalesPersonController.java`
 
 [//]: # (TODO: add python)
 - Python, see `./python/`
@@ -40,7 +39,9 @@ npm start
 
 Java:
 ```
-mvn spring-boot:run
+// you will need to have a JDK installed, or run the spring-boot:run Maven target from an IDE
+
+mvnw spring-boot:run
 ```
 
 Python:
