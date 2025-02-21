@@ -37,7 +37,7 @@ public class SalesPersonController {
      * }
      */
     @GetMapping("/sales_person")
-    public List<SalesPersonRepository.SalesPerson> getSales() {
+    public List<SalesPersonRepository.SalesPerson> getSalesPeople() {
         /*
          * Step 1 - Add new a parameter for ignoring the months that are below a certain value.
          *          This value should be required and should have its type validated.

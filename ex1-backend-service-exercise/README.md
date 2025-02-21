@@ -17,8 +17,7 @@ More details are provided in comments in the source files:
 
 - Java, see `./java/src/main/java/com/bitovi/service_exercise/SalesPersonController.java`
 
-[//]: # (TODO: add python)
-- Python, see `./python/`
+- Python, see `./python/main.py`
 
 ## Command line operations
 
@@ -46,5 +45,7 @@ mvnw spring-boot:run
 
 Python:
 ```
+// you will need to set up a venv and install requirement.txt
+
 fastapi dev main.py
 ```
