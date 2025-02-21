@@ -1,4 +1,4 @@
-# Bitovi Debugging Example
+# Bitovi Backend Debugging Exercise
 
 ## Bug Report
 

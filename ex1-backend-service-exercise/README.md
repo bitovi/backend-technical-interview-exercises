@@ -1,0 +1,49 @@
+# Bitovi Backend Service Exercise 
+
+This exercise can be completed in NodeJS (w/ Express), Python (w/ FastAPI), or Java (w/ Spring Boot), as the interviewee
+prefers.
+
+## Scenario
+
+The Sales Department has requested an API endpoint to fetch a list of sales people and their monthly aggregate sales, 
+while optionally ignoring any months with amounts below a parameter value they pass in. Your task is to implement that
+parameter.
+
+- Step 1: add a required parameter to the `GET /sales_person` endpoint with appropriate validation
+- Step 2: use that parameter value to exclude some data
+
+More details are provided in comments in the source files:
+- Node, see `./node/index.js`
+
+[//]: # (TODO: add java)
+- Java, see `./java/`
+
+[//]: # (TODO: add python)
+- Python, see `./python/`
+
+## Command line operations
+
+The interviewer will start the server.
+the server will automatically reload after changes have been performed.
+
+Make a test request against the server with a command like this:
+```
+curl 'localhost:3002/sales'
+```
+
+## Interviewer setup instructions
+
+Node:
+```
+npm start
+```
+
+Java:
+```
+mvn spring-boot:run
+```
+
+Python:
+```
+fastapi dev main.py
+```
