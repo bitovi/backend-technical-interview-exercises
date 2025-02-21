@@ -22,7 +22,7 @@ More details are provided in comments in the source files:
 ## Command line operations
 
 The interviewer will start the server.
-the server will automatically reload after changes have been performed.
+The Node & Python servers will automatically reload after changes have been performed.
 
 Make a test request against the server with a command like this:
 ```
