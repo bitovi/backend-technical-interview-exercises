@@ -38,5 +38,5 @@ app.get("/sales_person", (req, res) => {
 });
 
 app.listen(3002, () => {
-  console.log("Exercise 1: server started, curl 'localhost:3002/sales'");
+  console.log("Exercise 1: server started, curl 'localhost:3002/sales_person'");
 });
