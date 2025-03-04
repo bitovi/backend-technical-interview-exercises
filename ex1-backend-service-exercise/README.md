@@ -19,6 +19,8 @@ More details are provided in comments in the source files:
 
 - Python, see `./python/main.py`
 
+- Go, see `./go/src/main.go`
+
 ## Command line operations
 
 The interviewer will start the server.
@@ -49,4 +51,11 @@ Python:
 // you will need to set up a venv and install requirement.txt
 
 fastapi dev main.py
+```
+
+Go:
+```
+// you will need to have go installed and install go modules
+
+go run main.go
 ```
