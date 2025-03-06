@@ -33,9 +33,8 @@ To run a SQL statement against one of the tables:
 psql postgresql://dbuser:dbpassword@localhost:5432/postgres -c "select * from product"
 ```
 
-## Interviewer setup instructions
+## Interviewee setup instructions
 
-Note: do this before the interview starts, as it can take a minute.
 ```
 docker compose up
 ```

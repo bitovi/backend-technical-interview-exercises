@@ -1,6 +1,6 @@
 # Bitovi Backend Service Exercise 
 
-This exercise can be completed in NodeJS (w/ Express), Python (w/ FastAPI), or Java (w/ Spring Boot), as the interviewee
+This exercise can be completed in NodeJS (w/ Express), Python (w/ FastAPI), Java (w/ Spring Boot), or Go (w/Gin) as the interviewee
 prefers.
 
 ## Scenario
@@ -32,7 +32,7 @@ Make a test request against the server with a command like this:
 curl 'localhost:3002/sales_person'
 ```
 
-## Interviewer setup instructions
+## Interviewee setup instructions
 
 Node:
 ```
