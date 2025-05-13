@@ -1,0 +1,161 @@
+[
+  {
+    "name": "Abdul Karim Khandker",
+    "sales": [
+      {
+        "month": 1,
+        "amount": 117
+      },
+      {
+        "month": 2,
+        "amount": 46
+      },
+      {
+        "month": 3,
+        "amount": 82
+      },
+      {
+        "month": 4,
+        "amount": 102
+      },
+      {
+        "month": 5,
+        "amount": 119
+      },
+      {
+        "month": 6,
+        "amount": 93
+      },
+      {
+        "month": 7,
+        "amount": 123
+      },
+      {
+        "month": 8,
+        "amount": 138
+      },
+      {
+        "month": 9,
+        "amount": 91
+      },
+      {
+        "month": 10,
+        "amount": 53
+      },
+      {
+        "month": 11,
+        "amount": 55
+      },
+      {
+        "month": 12,
+        "amount": 115
+      }
+    ]
+  },
+  {
+    "name": "Adam Cortez",
+    "sales": [
+      {
+        "month": 1,
+        "amount": 52
+      },
+      {
+        "month": 2,
+        "amount": 55
+      },
+      {
+        "month": 3,
+        "amount": 91
+      },
+      {
+        "month": 4,
+        "amount": 107
+      },
+      {
+        "month": 5,
+        "amount": 53
+      },
+      {
+        "month": 6,
+        "amount": 158
+      },
+      {
+        "month": 7,
+        "amount": 114
+      },
+      {
+        "month": 8,
+        "amount": 158
+      },
+      {
+        "month": 9,
+        "amount": 73
+      },
+      {
+        "month": 10,
+        "amount": 106
+      },
+      {
+        "month": 11,
+        "amount": 58
+      },
+      {
+        "month": 12,
+        "amount": 152
+      }
+    ]
+  },
+  {
+    "name": "Alycia Lin",
+    "sales": [
+      {
+        "month": 1,
+        "amount": 125
+      },
+      {
+        "month": 2,
+        "amount": 113
+      },
+      {
+        "month": 3,
+        "amount": 128
+      },
+      {
+        "month": 4,
+        "amount": 78
+      },
+      {
+        "month": 5,
+        "amount": 156
+      },
+      {
+        "month": 6,
+        "amount": 59
+      },
+      {
+        "month": 7,
+        "amount": 102
+      },
+      {
+        "month": 8,
+        "amount": 64
+      },
+      {
+        "month": 9,
+        "amount": 76
+      },
+      {
+        "month": 10,
+        "amount": 35
+      },
+      {
+        "month": 11,
+        "amount": 103
+      },
+      {
+        "month": 12,
+        "amount": 38
+      }
+    ]
+  }
+]

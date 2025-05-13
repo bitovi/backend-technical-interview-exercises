@@ -21,6 +21,8 @@ More details are provided in comments in the source files:
 
 - Go, see `./go/src/main.go`
 
+- Dotnet, see `./dotnet/ServiceExercise/Controllers/SalesPersonController.cs`
+
 ## Command line operations
 
 The interviewer will start the server.
@@ -58,4 +60,9 @@ Go:
 // you will need to have go installed and install go modules
 
 go run main.go
+```
+
+Dotnet:
+```
+dotnet run --launch-profile http
 ```
