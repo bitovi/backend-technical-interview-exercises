@@ -64,5 +64,6 @@ go run main.go
 
 Dotnet:
 ```
+// you will need to have .NET 8.0 installed or run the project from an IDE
 dotnet run --launch-profile http
 ```
