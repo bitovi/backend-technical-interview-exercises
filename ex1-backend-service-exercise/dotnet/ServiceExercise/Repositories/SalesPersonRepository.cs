@@ -25,6 +25,20 @@ public class SalesPersonRepository : ISalesPersonRepository
 
     public IList<SalesPerson> GetSalesPersons()
     {
-        return _salesPersons.ToList();
+        return _salesPersons.Select(s =>
+        {
+            return new SalesPerson
+            {
+                Name = s.Name,
+                Sales = s.Sales.Select(t =>
+                {
+                    return new Sales
+                    {
+                        Amount = t.Amount,
+                        Month = t.Month
+                    };
+                }).ToList()
+            };
+        }).ToList();
     }
 }
